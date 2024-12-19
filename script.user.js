@@ -13,7 +13,7 @@
 (function() {
     const currentUrl = window.location.href;
     const wars = /https:\/\/(m.)?rivalregions\.com\/#war\/top\/\d+/;
-    const laws = /https:\/\/(m.)rivalregions\.com\/#log\/index\/parliament\/\d+/
+    const laws = /https:\/\/(m.)?rivalregions\.com\/#log.+/
     if (wars.test(currentUrl)) {
         setTimeout(function() {
             const tds = document.querySelectorAll('td[rat][action].list_avatar.pointer.small');
